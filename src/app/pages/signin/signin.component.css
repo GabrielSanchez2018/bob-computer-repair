@@ -1,0 +1,37 @@
+.signinForm {
+  width: 30%;
+  margin: 0 auto;
+  margin-top: 5%;
+
+}
+
+.mat-form-field {
+    width: auto;
+}
+
+.register-link {
+    text-decoration: none;
+}
+
+.forgot-password-link {
+    text-decoration: none;
+    font-weight: lighter;
+}
+
+.forgot-password-link:hover {
+    text-decoration: underline;
+}
+
+.mat-card-content {
+    text-align: center;
+}
+
+.mat-toolbar-row{
+  padding-bottom: 15px;
+  position: relative;
+}
+
+.mat-toolbar{
+  background-color: white;
+  position: absolute;
+}

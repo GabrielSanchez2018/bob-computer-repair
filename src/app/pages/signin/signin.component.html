@@ -1,0 +1,45 @@
+<!--=========================
+Name: Brittany Dockter, Justin Singleton, Gabriel Sanchez
+Date: April 19, 2020
+Assignment: sign in page
+Description: main sign in page for getting into bcrs
+==========================-->
+
+    <mat-card class="signinForm">
+                    <mat-card-title style="text-align: center; font-size: 25px; font-weight: lighter;"
+                        class="mat-headline">Employee Sign In
+                    </mat-card-title>
+                    <br />
+                    <mat-card-subtitle style="text-align: center; font-weight: lighter;">
+                    <a routerLink="/session/account-registration" class="register-link">or create an account</a>
+                </mat-card-subtitle>
+
+                <br />
+                <mat-card-subtitle style="text-align: center;" class="mat-headline">You must enter a valid
+                username/password to proceed
+            </mat-card-subtitle>
+
+            <mat-card-content>
+                <small style="color: #df546a;" *ngIf="errorMessage">{{ errorMessage }}<br /></small>
+                <mat-card class="mat-elevation-z0">
+                    <form [formGroup]="form" (ngSubmit)="signin(); form.reset()" #loginForm="ngForm">
+                        <mat-card-content fxLayout="column" fxLayoutGap="10px">
+                            <mat-form-field>
+                                <input type="text" matInput fxFlex [formControl]="form.controls['username']"
+                                    placeholder="Username"/>
+                            </mat-form-field>
+                            <mat-form-field>
+                                <input type="password" matInput fxFlex [formControl]="form.controls['password']"
+                                    placeholder="Password"/>
+                            </mat-form-field>
+                        </mat-card-content>
+                        <mat-card-actions>
+                            <button type="submit" fxFlex mat-raised-button color="accent">Submit</button>
+                        </mat-card-actions>
+                        <br />
+                        <a fxLayoutAlign="end" class="forgot-password-link" routerLink="/session/forgot-password">Forgot password?</a>
+                    </form>
+                </mat-card>
+            </mat-card-content>
+    </mat-card>
+

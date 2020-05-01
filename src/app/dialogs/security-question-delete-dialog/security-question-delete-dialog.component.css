@@ -1,0 +1,9 @@
+p { color: red }
+
+mat-dialog-actions button {
+  width: 48%;
+}
+
+.mat-icon {
+  color: red;
+}

@@ -1,0 +1,60 @@
+.mat-card {
+  width: 75%;
+  margin: 0 auto;
+  text-align: center;
+  font-weight: lighter;
+  margin-top: 2%;
+  margin-bottom: 5%;
+}
+
+.gridList {
+  width: 75%;
+  margin: 0 auto;
+  text-align: center;
+  font-weight: lighter;
+  margin-top: 2%;
+  padding-bottom: 15px;
+}
+.welcome {
+  font-size: 100px;
+}
+
+h1, h2, p{
+  font-weight: lighter;
+}
+
+
+/* Float four columns side by side */
+.column {
+  float: left;
+  width: 25%;
+  margin-left: 5%;
+}
+
+/* Remove extra left and right margins, due to padding */
+.row {margin: 3 auto;}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive columns */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 90%;
+    display: block;
+    margin-bottom: 20px;
+    margin-left: 1%;
+  }
+}
+
+/* Style the counter cards */
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  padding: 16px;
+  text-align: center;
+  background-color: white;
+}

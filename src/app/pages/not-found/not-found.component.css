@@ -1,0 +1,19 @@
+.redMessage {
+  width: 15%;
+  margin: 0 auto;
+  margin-top: 5%;
+  text-align: center;
+  background-color: red;
+  color: aliceblue;
+  font-size: larger;
+}
+
+.normalMessage {
+  width: 50%;
+  margin: 0 auto;
+  margin-top: 5%;
+  text-align: center;
+  background-color: none;
+  color: black;
+  background-color: white;
+}

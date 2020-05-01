@@ -1,0 +1,22 @@
+<!--=========================
+Name: Brittany Dockter, Justin Singleton, Gabriel Sanchez
+Date: April 19, 2020
+Assignment: user delete dialog
+Description: html for the delete dialog page
+==========================-->
+
+
+<h2 mat-dialog-title>Confirmation Dialog</h2>
+
+<div mat-dialog-content>
+    <p>Are you sure you want to remove user: <strong>{{ username }}</strong> from the system?</p>
+    <small style="color: #df546a;">WARNING: This cannot be undone.</small>
+    <hr />
+
+    <div mat-dialog-actions align="end">
+      <button mat-raised-button matDialogClose="cancel" color="primary">No Thanks</button>
+      <button mat-raised-button matDialogClose="confirm" color="warn" cdkFocusInitial>Accept</button>
+    </div>
+</div>
+
+
