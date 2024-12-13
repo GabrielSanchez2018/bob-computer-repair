@@ -39,7 +39,7 @@ app.use(cors());
  */
 const port = process.env.PORT || '3000' // server port
 
-const conn = 'mongodb+srv://Gabriel:Jairo500!@cluster0-djivq.gcp.mongodb.net/brcs?retryWrites=true&w=majority';
+
 /**
  * Database connection
  */
